@@ -12,8 +12,8 @@ services:
      - $PWD/storage/rabbitmq1:/var/lib/rabbitmq
     environment:
      - RABBITMQ_ERLANG_COOKIE=This_is_my_secret_phrase
-     - RABBITMQ_DEFAULT_USER=mqadmin
-     - RABBITMQ_DEFAULT_PASS=Admin123XX_
+     - RABBITMQ_DEFAULT_USER=admin
+     - RABBITMQ_DEFAULT_PASS=123456
      - CLUSTERED=true
  
   rabbitmq2:
@@ -27,8 +27,8 @@ services:
      - $PWD/storage/rabbitmq2:/var/lib/rabbitmq
     environment:
      - RABBITMQ_ERLANG_COOKIE=This_is_my_secret_phrase
-     - RABBITMQ_DEFAULT_USER=mqadmin
-     - RABBITMQ_DEFAULT_PASS=Admin123XX_
+     - RABBITMQ_DEFAULT_USER=admin
+     - RABBITMQ_DEFAULT_PASS=123456
      - CLUSTERED=true
     links:
      - rabbitmq1:rabbitmq1
@@ -44,8 +44,8 @@ services:
       - $PWD/storage/rabbitmq3:/var/lib/rabbitmq
     environment:
      - RABBITMQ_ERLANG_COOKIE=This_is_my_secret_phrase
-     - RABBITMQ_DEFAULT_USER=mqadmin
-     - RABBITMQ_DEFAULT_PASS=Admin123XX_
+     - RABBITMQ_DEFAULT_USER=admin
+     - RABBITMQ_DEFAULT_PASS=123456
      - CLUSTERED=true
     links:
      - rabbitmq1:rabbitmq1
@@ -62,8 +62,8 @@ services:
       - $PWD/storage/rabbitmq4:/var/lib/rabbitmq
     environment:
      - RABBITMQ_ERLANG_COOKIE=This_is_my_secret_phrase
-     - RABBITMQ_DEFAULT_USER=mqadmin
-     - RABBITMQ_DEFAULT_PASS=Admin123XX_
+     - RABBITMQ_DEFAULT_USER=admin
+     - RABBITMQ_DEFAULT_PASS=123456
      - CLUSTERED=true
     links:
      - rabbitmq1:rabbitmq1
