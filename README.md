@@ -110,5 +110,7 @@ username: admin
 password: 123456
 
 
+Producer port: 5672
+
 
 
