@@ -102,3 +102,13 @@ ______________
 If you want, you can open my script and my docker-compose.yml and edit if you need, you can change the password or username,
 containers name, and Earlang cookie (Shared Key);
 
+
+To acess RabbitQM Management Page, go to:
+"yourserverip:8080"
+
+username: admin
+password: 123456
+
+
+
+
